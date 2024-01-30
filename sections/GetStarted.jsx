@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
-import { fadeIn, planetVariants, staggerContainer } from "../utils/motion";
-import styles from "../styles";
-import { StartSteps, TitleText, TypingText } from "../components";
-import { startingFeatures } from "../constants";
+import { motion } from 'framer-motion';
+import { fadeIn, planetVariants, staggerContainer } from '../utils/motion';
+import styles from '../styles';
+import { StartSteps, TitleText, TypingText } from '../components';
+import { startingFeatures } from '../constants';
 
 const GetStarted = () => (
   <section>
@@ -16,7 +16,7 @@ const GetStarted = () => (
       className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-8`}
     >
       <motion.div
-        variants={planetVariants("left")}
+        variants={planetVariants('left')}
         className={`flex-1 ${styles.flexCenter}`}
       >
         <img
@@ -26,7 +26,7 @@ const GetStarted = () => (
         />
       </motion.div>
       <motion.div
-        variants={fadeIn("left", "tween", 0.2, 1)}
+        variants={fadeIn('left', 'tween', 0.2, 1)}
         className="flex-[0.75] flex justify-center flex-col  md:flex items-center"
       >
         <TypingText title="| How METAVERSE Works ???" />

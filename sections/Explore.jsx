@@ -1,14 +1,14 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
-import { ExploreCard, TitleText, TypingText } from "../components";
-import styles from "../styles";
-import { staggerContainer } from "../utils/motion";
-import { exploreWorlds } from "../constants";
-import { useState } from "react";
+import { motion } from 'framer-motion';
+import { ExploreCard, TitleText, TypingText } from '../components';
+import styles from '../styles';
+import { staggerContainer } from '../utils/motion';
+import { exploreWorlds } from '../constants';
+import { useState } from 'react';
 
 const Explore = () => {
-  const [active, setActive] = useState("world-1");
+  const [active, setActive] = useState('world-1');
   return (
     <section className={`${styles.paddings}`} id="explore">
       <motion.div
@@ -18,7 +18,7 @@ const Explore = () => {
         viewport={{ once: false, amount: 0.25 }}
         className={`${styles.innerWidth}`}
       >
-        <TypingText title={" | The World"} textStyles="text-center" />
+        <TypingText title={' | The World'} textStyles="text-center" />
         <TitleText
           title={
             <>
@@ -29,7 +29,7 @@ const Explore = () => {
           textStyles="text-center"
         />
         <div className=" flex lg:flex-row flex-col min-h-[70vh] gap-5  ">
-          {" "}
+          {' '}
           {exploreWorlds.map((world, index) => (
             <ExploreCard
               key={world.id}

@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
-import { NewFeatures, TitleText, TypingText } from "../components";
-import { fadeIn, planetVariants, staggerContainer } from "../utils/motion";
-import { newFeatures } from "../constants";
-import styles from "../styles";
+import { motion } from 'framer-motion';
+import { NewFeatures, TitleText, TypingText } from '../components';
+import { fadeIn, planetVariants, staggerContainer } from '../utils/motion';
+import { newFeatures } from '../constants';
+import styles from '../styles';
 
 const WhatsNew = () => (
   <section className={`${styles.paddings} relative z-10`}>
@@ -16,7 +16,7 @@ const WhatsNew = () => (
       className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-8`}
     >
       <motion.div
-        variants={fadeIn("right", "tween", 0.2, 1)}
+        variants={fadeIn('right', 'tween', 0.2, 1)}
         className=" flex-[0.95] flex justify-center flex-col"
       >
         <TypingText title="| Whats New?" />
@@ -24,7 +24,7 @@ const WhatsNew = () => (
           title={
             <>
               Whats new about
-              <br /> Metaversus?{" "}
+              <br /> Metaversus?{' '}
             </>
           }
         />
@@ -35,7 +35,7 @@ const WhatsNew = () => (
         </div>
       </motion.div>
       <motion.div
-        variants={planetVariants("right")}
+        variants={planetVariants('right')}
         className={`flex-1 ${styles.flexCenter}`}
       >
         <img
